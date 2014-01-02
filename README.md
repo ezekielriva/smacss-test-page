@@ -1,4 +1,14 @@
-smacss-test-page
+SMACSS Test Page
 ================
 
-Try to mockup a page with smacss
+A test page using [SMACSS][1] and [HTML5 Semantic][2].
+
+Dependencies:
+
+  * Middleman
+  * Middleman livereload
+  * Slim
+
+[1]: http://smacss.com/
+[2]: https://developer.mozilla.org/es/docs/HTML/HTML5
+
