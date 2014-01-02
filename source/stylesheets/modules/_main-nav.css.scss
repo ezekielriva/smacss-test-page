@@ -1,0 +1,18 @@
+.m-main-nav-item {
+  float: left;
+  height: 100px;
+
+  > a {
+    line-height: 97px;
+
+    padding-left: 20px;
+    padding-right: 24px;
+
+    display: block;
+  }
+
+  > a:hover {
+    color: $font-color-base;
+    border-bottom: 3px solid $skyblue-base;
+  }
+}

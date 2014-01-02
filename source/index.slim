@@ -1,0 +1,63 @@
+= partial 'partials/shared/carousel'
+
+section.l-features
+  - 4.times.each
+    figure.m-feature
+      img.m-feature-image src="#{lorem.image('105x105', background_color: '#44c0c2', color: '#fff')}"
+      figcaption.m-feature-description
+        h1.t-text-some-high #{lorem.words 2}
+        p
+          |#{lorem.words 16}
+        a.m-btn href="#" Read More
+
+section.l-portfolio
+  header
+    h1.m-section-title Portfolio
+  - 2.times.each
+    .row
+      - 3.times.each
+        img.m-work src="#{lorem.image('370x314', background_color: '#44c0c2', color: '#fff')}"
+  a.m-btn.big.btn-portfolio href="#" See all works
+
+section.team
+  header
+    h1.m-section-title The Team
+  - 4.times.each
+    figure.m-team
+      a.m-team-profile-image href="#"
+        img src="#{lorem.image('200x200', background_color: '#44c0c2', color: '#fff')}"
+      figcaption.m-team-info
+        h1.t-text-some-high #{lorem.words 2}
+        h2.t-text-normal #{lorem.words 2}
+        p
+          |#{lorem.words 16}
+
+section.prices
+  - 3.times.each
+    header #{lorem.word}
+    .price $$,$ / Month
+    - 6.times.each
+      .features #{lorem.words 3}
+    a href="#" Buy Now
+
+section.client-comments
+  header
+    h1.m-section-title What Client Say
+  .carousel
+    blockquote #{lorem.words 34}
+    .signature #{lorem.word}
+
+section.contact-us
+  header
+    h1.m-section-title Contact Us
+  .contact-info
+    h2 Get in touch with us
+    p
+      |Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+  .contact-form
+    form
+      input placehold="Name"
+      input placehold="Email"
+      textarea placehold="Message"
+      button Send
+

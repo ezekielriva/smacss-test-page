@@ -1,0 +1,28 @@
+.m-feature {
+  width: 245px;
+  height: 315px;
+  float: left;
+  margin: 50px 21px;
+}
+
+.m-feature-image {
+  display: block;
+  margin: 50px auto;
+}
+
+.m-feature-description {
+  text-align: center;
+}
+
+.m-feature-description > p {
+  overflow: hidden;
+  height: 75px;
+}
+
+.m-feature-description > h1 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  height: 26px;
+  line-height: 22px;
+}

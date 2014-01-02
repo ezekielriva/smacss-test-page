@@ -1,0 +1,24 @@
+.m-team {
+  width: 245px;
+  float: left;
+  margin: 140px 50px 105px auto;
+  text-align: center;
+
+  &:last-child { margin-right: 0px; }
+}
+
+.m-team-profile-image > img {
+  border-radius: 100px;
+}
+.m-team-profile-image:hover > img {
+  opacity: 0.5;
+}
+
+.m-team-info {
+  margin-top: 50px;
+}
+
+.m-team-info > h1,
+.m-team-info > h2 {
+  font-weight: normal;
+}

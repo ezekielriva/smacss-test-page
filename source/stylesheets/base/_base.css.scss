@@ -1,0 +1,25 @@
+body, section, ul, figure, h1, h2 {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background-color: white;
+  color: $font-color-base;
+  font-size: 14px;
+}
+
+header { overflow: hidden; }
+
+section { overflow: hidden; }
+section:nth-child(even) { background-color: #f1f1f1; }
+
+a {
+  text-decoration: none;
+  color: $font-color-base;
+}
+
+h1 {
+  font-size: 41px;
+}
