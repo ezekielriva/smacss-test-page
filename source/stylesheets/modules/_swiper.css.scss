@@ -81,10 +81,6 @@ Basic Swiper Styles
 	-ms-touch-action: pan-x;
 }
 
-/* ===============================================================
-Your custom styles, here you need to specify container's and slide's
-sizes, pagination, etc.
-================================================================*/
 .m-carousel { height: 560px; }
 .m-carousel-arrow {
 	display: block;
@@ -126,26 +122,21 @@ sizes, pagination, etc.
 	font-size: 23px;
 	font-weight: normal;
 }
-.swiper-slide-active {
-	/* Specific active slide styling: */
 
+.m-carousel-quote {
+	height: 170px;
+	margin-bottom: 103px;
 }
-.swiper-slide-visible {
-	/* Specific visible slide styling: */
-
+.m-carousel-slide.quote {
+	color: $font-color-base1;
+	font-size: 19px;
 }
-/* ===============================================================
-Pagination Styles
-================================================================*/
-.swiper-pagination-switch {
-	/* Stylize pagination button: */
-
+.m-carousel-slide.quote > blockquote {
+	width: 642px;
+	margin: 0px auto;
 }
-.swiper-active-switch {
-	/* Specific active button style: */
-
-}
-.swiper-visible-switch {
-	/* Specific visible button style: */
-
+.m-carousel-slide.quote > h3 {
+	margin-top: 42px;
+	font-size: 21px;
+	color: $font-color-grey1;
 }

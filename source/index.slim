@@ -49,10 +49,15 @@ section.prices
 section.client-comments
   .l-container
     header
-      h1.m-section-title What Client Say
-    .carousel
-      blockquote #{lorem.words 34}
-      .signature #{lorem.word}
+      h1.m-section-title.what-client-say What Client Say
+    .m-carousel-quote data-behavior="swiper"
+      i.icon-angle-left.m-carousel-arrow.arrow-left
+      i.icon-angle-right.m-carousel-arrow.arrow-right
+      .swiper-wrapper
+        - [lorem.words(32), lorem.words(23), lorem.words(12)].each do |text|
+          .swiper-slide.m-carousel-slide.quote
+            blockquote #{text}
+            h3 #{lorem.word}
 
 section.contact-us.l-contact-us
   .l-container
