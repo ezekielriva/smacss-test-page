@@ -5,6 +5,9 @@
      -moz-border-radius: 4px;
           border-radius: 4px;
 
+  border: 0;
+  outline: none;
+
   background-color: $skyblue-base;
 
   display: inline-block;
@@ -13,6 +16,19 @@
 
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.m-btn.large {
+  line-height: 40px;
+
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+
+  padding-left: 51px;
+  padding-right: 51px;
+
+  font-weight: 600;
 }
 
 .m-btn.big {
@@ -28,6 +44,18 @@
 }
 
 /* Specific modules */
-.m-btn.btn-portfolio {
+.m-btn.portfolio {
   margin: 50px auto 100px auto;
+}
+
+.m-btn.buy-plan {
+  background: $darkblue-base;
+  margin: 29px auto;
+}
+
+.m-btn.submit-contact-form {
+  margin-top: 31px;
+  float: right;
+  font-size: 22px;
+  font-weight: normal;
 }

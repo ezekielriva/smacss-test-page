@@ -1,0 +1,37 @@
+.m-plan {
+  float: left;
+  margin-right: 32px;
+  width: 368px;
+  text-align: center;
+  margin-top: 119px;
+  margin-bottom: 101px;
+
+  &:last-child { margin-right: 0px; }
+}
+
+.m-plan > header {
+  background: $darkblue-base;
+  color: white;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 75px;
+}
+
+.m-plan > footer {
+  margin-top: 1px;
+  background: $grey;
+}
+
+.m-plan > .price {
+  background: $grey;
+  color: $font-color-darkblue;
+  font-size: 20px;
+  line-height: 68px;
+}
+
+.m-plan-feature {
+  margin-top: 1px;
+  background: white;
+  color: $font-color-grey;
+  line-height: 45px;
+}

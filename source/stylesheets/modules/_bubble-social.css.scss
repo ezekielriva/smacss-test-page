@@ -1,0 +1,14 @@
+.bubble-social {
+  width: 42px;
+  height: 42px;
+  margin-right: 15px;
+  display: inline-block;
+  border-radius: 42px;
+
+  line-height: 42px;
+  color: white;
+  font-size: 17px;
+  text-align: center;
+
+  &:first-child { margin-left: -3px; }
+}
