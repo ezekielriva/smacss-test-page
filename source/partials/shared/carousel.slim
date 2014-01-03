@@ -1,2 +1,10 @@
-.carousel
-  img src="#{lorem.image('1170x560', background_color: '#44c0c2', color: '#fff', text: 'This is a main heading')}"
+.m-carousel data-behavior="swiper"
+  i.icon-angle-left.m-carousel-arrow.arrow-left
+  i.icon-angle-right.m-carousel-arrow.arrow-right
+  .swiper-wrapper
+    -['This is a main heading', 'This is a secondary heading'].each do |text|
+      .swiper-slide.m-carousel-slide style="background: url(#{lorem.image('1170x560', background_color:'#44c0c2')}) no-repeat; background-size: cover"
+        h1 #{text}
+        h2 Subtitle
+
+        a.m-btn.big.transparent.carousel href="#" Learn More
