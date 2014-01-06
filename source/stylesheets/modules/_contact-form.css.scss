@@ -3,8 +3,7 @@
   margin-top: 126px;
 }
 
-.m-contact-form > input[type=text],
-.m-contact-form > input[type=email], {
+.m-contact-form-input {
   float: right;
   height: 44px;
   width: 250px;
@@ -17,9 +16,9 @@
   font-size: 16px;
 }
 
-.m-contact-form > input[type="text"] { margin-right: 29px; }
+.m-contact-form-input.w-margin-right { margin-right: 29px; }
 
-.m-contact-form > textarea {
+.m-contact-form-message {
   float: right;
   height: 179px;
   width: 550px;

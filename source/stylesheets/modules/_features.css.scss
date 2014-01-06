@@ -2,27 +2,23 @@
   width: 245px;
   height: 315px;
   float: left;
-  margin: 50px 21px;
-}
+  margin: 100px 21px 50px 21px;
 
-.m-feature-image {
-  display: block;
-  margin: 50px auto;
-}
-
-.m-feature-description {
   text-align: center;
 }
 
-.m-feature-description > p {
-  overflow: hidden;
-  height: 75px;
-}
+  .m-feature-caption-title {
+    height: 26px;
+    margin-top: 50px;
+    overflow: hidden;
 
-.m-feature-description > h1 {
-  overflow: hidden;
-  text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    font-size: 22px;
+    line-height: 22px;
+  }
 
-  height: 26px;
-  line-height: 22px;
-}
+  .m-feature-caption-description {
+    height: 75px;
+    overflow: hidden;
+  }
+

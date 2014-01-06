@@ -1,37 +1,41 @@
 .m-plan {
-  float: left;
-  margin-right: 32px;
   width: 368px;
+  float: left;
+  margin: 119px 32px 101px auto;
+
   text-align: center;
-  margin-top: 119px;
-  margin-bottom: 101px;
 
   &:last-child { margin-right: 0px; }
 }
 
-.m-plan > header {
-  background: $darkblue-base;
-  color: white;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 75px;
-}
+  .m-plan-header {
+    background: $darkblue-base;
 
-.m-plan > footer {
-  margin-top: 1px;
-  background: $grey;
-}
+    color: white;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 75px;
+  }
 
-.m-plan > .price {
-  background: $grey;
-  color: $font-color-darkblue;
-  font-size: 20px;
-  line-height: 68px;
-}
+  .m-plan-footer {
+    background: $grey;
+    margin-top: 1px;
+  }
 
-.m-plan-feature {
-  margin-top: 1px;
-  background: white;
-  color: $font-color-grey;
-  line-height: 45px;
-}
+  .m-plan-price {
+    background: $grey;
+
+    color: $font-color-darkblue;
+    font-size: 20px;
+    line-height: 68px;
+  }
+
+  .m-plan-features { list-style-type: none; }
+
+    .m-plan-features-item {
+      margin-top: 1px;
+      background: white;
+
+      color: $font-color-grey;
+      line-height: 45px;
+    }

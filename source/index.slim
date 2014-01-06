@@ -4,10 +4,10 @@ section.l-features
   .l-container
     - 4.times.each
       figure.m-feature
-        img.m-feature-image src="#{lorem.image('105x105', background_color: '#44c0c2', color: '#fff')}"
-        figcaption.m-feature-description
-          h1.t-text-some-high #{lorem.words 2}
-          p
+        img src="#{lorem.image('105x105', background_color: '#44c0c2', color: '#fff')}"
+        figcaption
+          h1.m-feature-caption-title #{lorem.words 2}
+          p.m-feature-caption-description
             |#{lorem.words 16}
           a.m-btn href="#" Read More
 
@@ -27,61 +27,61 @@ section.team
       h1.m-section-title The Team
     - 4.times.each
       figure.m-team
-        a.m-team-profile-image.s-team-profile-image href="#"
-          img src="#{lorem.image('200x200', background_color: '#44c0c2', color: '#fff')}"
-        figcaption.m-team-info
+        a href="#"
+          img.m-team-profile-image src="#{lorem.image('200x200', background_color: '#44c0c2', color: '#fff')}"
+        figcaption
           h1.t-text-some-high #{lorem.words 2}
           h2.t-text-normal #{lorem.words 2}
-          p
-            |#{lorem.words 16}
+          p #{lorem.words 16}
 
 section.prices
   .l-container
     - 3.times.each_with_index do |index|
       .m-plan class="#{'is-plan-higlight' if index%2 != 0}"
-        header #{lorem.word}
-        .price $$,$ / Month
-        - 6.times.each
-          .m-plan-feature #{lorem.words 3}
-        footer
+        header.m-plan-header #{lorem.word}
+        .m-plan-price $$,$ / Month
+        ul.m-plan-features
+          - 6.times.each
+            li.m-plan-features-item #{lorem.words 3}
+        footer.m-plan-footer
           a.m-btn.large.buy-plan href="#" Buy Now
 
 section.client-comments
   .l-container
     header
       h1.m-section-title.what-client-say What Client Say
-    .m-carousel-quote data-behavior="swiper"
-      i.icon-angle-left.m-carousel-arrow.arrow-left
-      i.icon-angle-right.m-carousel-arrow.arrow-right
+    .m-carousel-base.m-carousel-quote data-behavior="swiper"
+      i.icon-angle-left.m-carousel-base-arrow.arrow-left.quote
+      i.icon-angle-right.m-carousel-base-arrow.arrow-right.quote
       .swiper-wrapper
         - [lorem.words(32), lorem.words(23), lorem.words(12)].each do |text|
-          .swiper-slide.m-carousel-slide.quote
-            blockquote #{text}
-            h3 #{lorem.word}
+          .swiper-slide.m-carousel-slide.m-carousel-quote-slide
+            blockquote.m-carousel-quote-quote #{text}
+            h3.m-carousel-quote-signature #{lorem.word}
 
-section.contact-us.l-contact-us
+section.l-contact-us
   .l-container
     header
       h1.m-section-title Contact Us
     aside.m-contact-info
-      h2 Get in touch with us
-      p
+      h2.m-contact-info-title Get in touch with us
+      p.m-contact-info-text
         |Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
       .m-contact-social
         i.icon-facebook.bubble-social.t-facebook
         i.icon-twitter.bubble-social.t-twitter
         i.icon-google-plus.bubble-social.t-google-plus
       address.m-contact-info-address
-        a href="cssauthor.com" cssauthor.com
+        a.m-contact-info-address-link href="cssauthor.com" cssauthor.com
         br
         |+XX-XXXX - XXXX - XX
         br
-        a href="mailto:info@cssauthor.com" info@cssauthor.com
+        a.m-contact-info-address-link href="mailto:info@cssauthor.com" info@cssauthor.com
     form.m-contact-form
-      input type="email" placeholder="Email"
-      input type="text" placeholder="Name"
+      input.m-contact-form-input type="email" placeholder="Email"
+      input.m-contact-form-input.w-margin-right type="text" placeholder="Name"
       br
-      textarea placeholder="Message"
+      textarea.m-contact-form-message placeholder="Message"
       br
       input.m-btn.large.submit-contact-form type="submit" value="Send"
 

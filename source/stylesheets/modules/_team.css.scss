@@ -7,17 +7,8 @@
   &:last-child { margin-right: 0px; }
 }
 
-.m-team-profile-image > img {
-  border-radius: 100px;
-}
-.m-team-profile-image:hover > img {
-  opacity: 0.5;
-}
-
-.m-team-info {
-  margin-top: 50px;
-}
-
-.m-team-info > h2 {
-  font-weight: normal;
-}
+  .m-team-profile-image {
+    border-radius: 100px;
+    margin-bottom: 50px;
+  }
+  .m-team-profile-image:hover { opacity: 0.5; }

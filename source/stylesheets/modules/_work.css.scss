@@ -5,12 +5,11 @@
   width: 370px;
   height: 314px;
 
-  margin: 15px;
+  margin: 15px 15px 15px 0;
 
   -webkit-border-radius: 3px;
      -moz-border-radius: 3px;
           border-radius: 3px;
 
-  &:first-child { margin-left: 0px; }
   &:last-child { margin-right: 0px; }
 }
